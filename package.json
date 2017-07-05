@@ -1,0 +1,39 @@
+{
+  "name": "REPLACEME",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/storage.ts",
+  "scripts": {
+      "build": "tsc",
+      "lint": "prettier --parser typescript --single-quote --trailing-comma es5 --tab-width 4 --write ",
+      "test": "jest --coverage --verbose"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "jest": "^19.0.2",
+    "prettier": "prettier/prettier#b2a092bd17621995533ccc19d2951ed366eef943",
+    "ts-jest": "^19.0.14",
+    "ts-loader": "^2.0.3",
+    "typescript": "~2.2.1",
+    "typescript-eslint-parser": "^2.1.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "moduleNameMapper": {
+      "^project/(.*)$": "<rootDir>/project/$1"
+    },
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  },
+  "private": true
+}
